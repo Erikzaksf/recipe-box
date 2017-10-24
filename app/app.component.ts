@@ -8,14 +8,20 @@ import { Component } from '@angular/core';
     <h3>A place to store your recipes</h3>
     <h4>{{currentRecipe}}</h4>
     <ul>
-      <li *ngFor="let currentRecipe of recipes">{{currentRecipe.name}}    <button (click)="editRecipe()">Edit!</button></li>
+      <li *ngFor="let currentRecipe of recipes">
+        Name:{{currentRecipe.name}} <br>
+        Ingredients:   {{currentRecipe.ingredients}} <br>
+        instructions: {{ currentRecipe.instructions}}  <br>
+        <button (click)="editRecipe()">Edit!</button>
+      </li>
+
     </ul>
   </div>
   `
 })
 
 export class AppComponent {
-  currentRecipe: string = 'tacos al pastor';
+  currentRecipe: string = 'Meatloaf';
   recipes: Recipe[] = [
     new Recipe('Meatloaf', '1lb gnd.beef, 1 onion', 'coook that stufffff'),
     new Recipe('Ablskiver', ';laskd;lkdfsl;k', 'sldsfl'),
