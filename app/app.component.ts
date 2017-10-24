@@ -7,11 +7,25 @@ import { Component } from '@angular/core';
     <h1>Recipe Box</h1>
     <h3>A place to store your recipes</h3>
     <h4>{{currentRecipe}}</h4>
-    <h2>This is where we will put our buttons</h2>
+    <ul>
+      <li *ngFor="let currentRecipe of recipes">{{currentRecipe.name}}    <button (click)="editRecipe()">Edit!</button></li>
+    </ul>
   </div>
   `
 })
 
 export class AppComponent {
-  currentRecipe: string = 'Tacos al pastor';
+  currentRecipe: string = 'tacos al pastor';
+  recipes: Recipe[] = [
+    new Recipe('Meatloaf', '1lb gnd.beef, 1 onion', 'coook that stufffff'),
+    new Recipe('Ablskiver', ';laskd;lkdfsl;k', 'sldsfl'),
+    new Recipe('Bim Bap', 'words', 'wprdss')
+  ];
+  editRecipe() {
+    alert("Please make your edit.")
+  }
+}
+
+export class Recipe {
+  constructor(public name: string, public ingredients: string, public instructions: string) {  }
 }
