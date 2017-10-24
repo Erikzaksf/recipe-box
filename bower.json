@@ -1,0 +1,17 @@
+{
+  "name": "recipe-box-angular",
+  "description": "recipe box made with angular",
+  "main": "",
+  "authors": [
+    "Erik Zakrzewski and Linda Luu."
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
