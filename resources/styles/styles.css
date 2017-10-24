@@ -1,0 +1,21 @@
+body {
+  background-image: url("http://www.myfreetextures.com/wp-content/uploads/2011/06/grungy-rough-old-worn-parchment-paper.jpg");
+  font-size: 20px;
+  font-family: 'Satisfy', cursive;
+}
+
+h1 {
+  color: black;
+  font-size: 35px;
+}
+
+button {
+  width: 8%;
+  height: 2%;
+  margin-bottom: 1%;
+}
+
+.name {
+  font-size: 25px;
+  margin-top: 1%;
+}
